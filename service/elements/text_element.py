@@ -309,12 +309,7 @@ class TextElement:
         ]
         
         fallback_fonts = [
-            'arial.ttf',
-            'arialbd.ttf',
-            'calibri.ttf',
-            'calibrib.ttf',
-            'georgia.ttf',
-            'georgiab.ttf',
+            'Arial.ttf',
         ]
         
         for path in possible_paths:

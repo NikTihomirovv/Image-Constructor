@@ -24,6 +24,7 @@ Thumbs.db
 
 # Проект
 output/
+service/output/
 logs/
 *.log
 tmp/

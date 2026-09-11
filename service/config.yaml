@@ -1,5 +1,5 @@
 storage:
-  save_to_folder: true
+  save_to_folder: false
   output_dir: "output/"
   fonts_dir: "fonts/"
   resources_dir: "resources/"
@@ -18,7 +18,7 @@ static_patterns_vk:
   canvas_bg_color: "#FFFFFF"
   canvas_color_mode: "RGB"
   
-  title_font: "inner.ttf"
+  title_font: "Arial.ttf"
   title_size: 60
   title_color: "#000000"
   title_alignment_x: "left"
@@ -26,7 +26,7 @@ static_patterns_vk:
   title_line_height: 0
   title_letter_spacing: 0
   
-  text_font: "inner.ttf"
+  text_font: "Arial.ttf"
   text_size: 40
   text_color: "#000000"
   text_alignment_x: "left"
@@ -34,7 +34,7 @@ static_patterns_vk:
   text_line_height: 0
   text_letter_spacing: 0
   
-  logo_font: "inner.ttf"
+  logo_font: "Arial.ttf"
   logo_size: 40
   logo_color: "#000000"
   logo_alignment_x: "left"
@@ -48,7 +48,7 @@ static_patterns_tg:
   canvas_bg_color: "#FFFFFF"
   canvas_color_mode: "RGB"
   
-  title_font: "inner.ttf"
+  title_font: "Arial.ttf"
   title_size: 60
   title_color: "#000000"
   title_alignment_x: "left"
@@ -56,7 +56,7 @@ static_patterns_tg:
   title_line_height: 0
   title_letter_spacing: 0
   
-  text_font: "inner.ttf"
+  text_font: "Arial.ttf"
   text_size: 40
   text_color: "#000000"
   text_alignment_x: "left"
@@ -64,7 +64,7 @@ static_patterns_tg:
   text_line_height: 0
   text_letter_spacing: 0
   
-  logo_font: "inner.ttf"
+  logo_font: "Arial.ttf"
   logo_size: 40
   logo_color: "#000000"
   logo_alignment_x: "left"
