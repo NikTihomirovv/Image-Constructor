@@ -1,0 +1,38 @@
+# Git
+.git
+.gitignore
+
+# Python
+__pycache__/
+*.py[cod]
+*.egg-info/
+.pytest_cache/
+.mypy_cache/
+.ruff_cache/
+venv/
+.venv/
+env/
+
+# IDE
+.vscode/
+.idea/
+*.iml
+
+# OS
+.DS_Store
+Thumbs.db
+
+# Проект
+output/
+logs/
+*.log
+tmp/
+temp/
+copy_debug.py
+ReadMe.Md
+Patterns.Md
+
+# Docker
+Dockerfile
+docker-compose.yml
+.dockerignore

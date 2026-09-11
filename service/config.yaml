@@ -1,0 +1,73 @@
+storage:
+  save_to_folder: true
+  output_dir: "output/"
+  fonts_dir: "fonts/"
+  resources_dir: "resources/"
+
+logging:
+  level: "DEBUG"
+  format: "%(asctime)s | %(levelname)-8s | %(name)-20s | %(message)s"
+  datefmt: "%Y-%m-%d %H:%M:%S"
+
+recursion:
+  limit: 10000
+
+static_patterns_vk:
+  canvas_width: 1080
+  canvas_height: 1350
+  canvas_bg_color: "#FFFFFF"
+  canvas_color_mode: "RGB"
+  
+  title_font: "inner.ttf"
+  title_size: 60
+  title_color: "#000000"
+  title_alignment_x: "left"
+  title_alignment_y: "top"
+  title_line_height: 0
+  title_letter_spacing: 0
+  
+  text_font: "inner.ttf"
+  text_size: 40
+  text_color: "#000000"
+  text_alignment_x: "left"
+  text_alignment_y: "top"
+  text_line_height: 0
+  text_letter_spacing: 0
+  
+  logo_font: "inner.ttf"
+  logo_size: 40
+  logo_color: "#000000"
+  logo_alignment_x: "left"
+  logo_alignment_y: "top"
+  logo_line_height: 0
+  logo_letter_spacing: 0
+
+static_patterns_tg:
+  canvas_width: 1080
+  canvas_height: 1350
+  canvas_bg_color: "#FFFFFF"
+  canvas_color_mode: "RGB"
+  
+  title_font: "inner.ttf"
+  title_size: 60
+  title_color: "#000000"
+  title_alignment_x: "left"
+  title_alignment_y: "top"
+  title_line_height: 0
+  title_letter_spacing: 0
+  
+  text_font: "inner.ttf"
+  text_size: 40
+  text_color: "#000000"
+  text_alignment_x: "left"
+  text_alignment_y: "top"
+  text_line_height: 0
+  text_letter_spacing: 0
+  
+  logo_font: "inner.ttf"
+  logo_size: 40
+  logo_color: "#000000"
+  logo_alignment_x: "left"
+  logo_alignment_y: "top"
+  logo_line_height: 0
+  logo_letter_spacing: 0
