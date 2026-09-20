@@ -60,6 +60,10 @@ class BasePattern(Pattern):
                 'y': f'IMAGE_{i}_Y',
                 'z': f'IMAGE_{i}_Z',
                 'border_radius': f'IMAGE_{i}_BORDER_RADIUS',
+                'rotation': f'IMAGE_{i}_ROTATION',
+                'opacity': f'IMAGE_{i}_OPACITY',
+                'flip_x': f'IMAGE_{i}_FLIP_X',
+                'flip_y': f'IMAGE_{i}_FLIP_Y',
             })
         return mappings
 
@@ -132,6 +136,10 @@ class BasePattern(Pattern):
                     y=getattr(d, mapping['y']),
                     z=getattr(d, mapping['z']),
                     border_radius=getattr(d, mapping['border_radius']),
+                    rotation=getattr(d, mapping['rotation'], 0),
+                    opacity=getattr(d, mapping['opacity'], 1.0),
+                    flip_x=getattr(d, mapping['flip_x'], False),
+                    flip_y=getattr(d, mapping['flip_y'], False),
                 ))
         
         # Создаем тексты

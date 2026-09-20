@@ -11,6 +11,10 @@ class Image:
     y: int = 0
     z: int = 0
     border_radius: int = 0
+    rotation: float = 0
+    opacity: float = 1.0
+    flip_x: bool = False
+    flip_y: bool = False
 
 
 @dataclass

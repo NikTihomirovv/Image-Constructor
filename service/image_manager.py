@@ -63,7 +63,7 @@ class ImageManager:
 
                 # --- Картинки ---
                 images = []
-                image_required = ['img', 'width', 'height', 'x', 'y', 'z', 'border_radius']
+                image_required = ['img', 'width', 'height', 'x', 'y', 'z', 'border_radius', 'rotation', 'opacity', 'flip_x', 'flip_y']
                 for canvas_image in canvas_images:
                     missing = [f for f in image_required if canvas_image.get(f) is None]
                     if missing:
@@ -78,6 +78,10 @@ class ImageManager:
                         y=canvas_image.get('y'),
                         z=canvas_image.get('z'),
                         border_radius=canvas_image.get('border_radius'),
+                        rotation=canvas_image.get('rotation', 0),
+                        opacity=canvas_image.get('opacity', 1.0),
+                        flip_x=canvas_image.get('flip_x', False),
+                        flip_y=canvas_image.get('flip_y', False),
                     ))
 
                 # --- Тексты ---

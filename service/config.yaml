@@ -1,5 +1,5 @@
 storage:
-  save_to_folder: false
+  save_to_folder: true
   output_dir: "output/"
   fonts_dir: "fonts/"
   resources_dir: "resources/"

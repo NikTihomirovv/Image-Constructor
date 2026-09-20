@@ -49,6 +49,12 @@ class TG_StaticPattern_1_Defaults(TGDefaults):
     IMAGE_1_Z: Final[int] = 1
     IMAGE_1_BORDER_RADIUS: Final[int] = 0
     
+    # Transform
+    IMAGE_1_ROTATION: Final[float] = 0
+    IMAGE_1_OPACITY: Final[float] = 1.0
+    IMAGE_1_FLIP_X: Final[bool] = False
+    IMAGE_1_FLIP_Y: Final[bool] = False
+    
     # ===== Тексты =====
     # TEXT_1: Текст
     TEXT_1_FONT: Final[str] = TGDefaults.TEXT_FONT
@@ -78,6 +84,12 @@ class TG_StaticPattern_2_Defaults(TGDefaults):
     IMAGE_1_Y: Final[int] = 450
     IMAGE_1_Z: Final[int] = 1
     IMAGE_1_BORDER_RADIUS: Final[int] = 0
+    
+    # Transform
+    IMAGE_1_ROTATION: Final[float] = 0
+    IMAGE_1_OPACITY: Final[float] = 1.0
+    IMAGE_1_FLIP_X: Final[bool] = False
+    IMAGE_1_FLIP_Y: Final[bool] = False
 
     # IMAGE_2: Линия слева
     IMAGE_2_WIDTH: Final[int] = 5
@@ -86,6 +98,12 @@ class TG_StaticPattern_2_Defaults(TGDefaults):
     IMAGE_2_Y: Final[int] = 25
     IMAGE_2_Z: Final[int] = 1
     IMAGE_2_BORDER_RADIUS: Final[int] = 0
+    
+    # Transform
+    IMAGE_2_ROTATION: Final[float] = 0
+    IMAGE_2_OPACITY: Final[float] = 1.0
+    IMAGE_2_FLIP_X: Final[bool] = False
+    IMAGE_2_FLIP_Y: Final[bool] = False
     
     # ===== Тексты =====
     # TEXT_1: Текст
@@ -116,6 +134,12 @@ class TG_StaticPattern_3_First_Defaults(TGDefaults):
     IMAGE_1_Y: Final[int] = 0
     IMAGE_1_Z: Final[int] = 1
     IMAGE_1_BORDER_RADIUS: Final[int] = 0
+    
+    # Transform
+    IMAGE_1_ROTATION: Final[float] = 0
+    IMAGE_1_OPACITY: Final[float] = 1.0
+    IMAGE_1_FLIP_X: Final[bool] = False
+    IMAGE_1_FLIP_Y: Final[bool] = False
 
     # IMAGE_2: Градиент
     IMAGE_2_WIDTH: Final[int] = 1080
@@ -124,6 +148,12 @@ class TG_StaticPattern_3_First_Defaults(TGDefaults):
     IMAGE_2_Y: Final[int] = 900
     IMAGE_2_Z: Final[int] = 2
     IMAGE_2_BORDER_RADIUS: Final[int] = 0
+    
+    # Transform
+    IMAGE_2_ROTATION: Final[float] = 0
+    IMAGE_2_OPACITY: Final[float] = 1.0
+    IMAGE_2_FLIP_X: Final[bool] = False
+    IMAGE_2_FLIP_Y: Final[bool] = False
 
     # IMAGE_3: Линия
     IMAGE_3_WIDTH: Final[int] = 800
@@ -132,6 +162,12 @@ class TG_StaticPattern_3_First_Defaults(TGDefaults):
     IMAGE_3_Y: Final[int] = 1300
     IMAGE_3_Z: Final[int] = 3
     IMAGE_3_BORDER_RADIUS: Final[int] = 0
+    
+    # Transform
+    IMAGE_3_ROTATION: Final[float] = 0
+    IMAGE_3_OPACITY: Final[float] = 1.0
+    IMAGE_3_FLIP_X: Final[bool] = False
+    IMAGE_3_FLIP_Y: Final[bool] = False
 
     # IMAGE_4: Стрелка
     IMAGE_4_WIDTH: Final[int] = 65
@@ -140,6 +176,12 @@ class TG_StaticPattern_3_First_Defaults(TGDefaults):
     IMAGE_4_Y: Final[int] = 1240
     IMAGE_4_Z: Final[int] = 3
     IMAGE_4_BORDER_RADIUS: Final[int] = 0
+    
+    # Transform
+    IMAGE_4_ROTATION: Final[float] = 0
+    IMAGE_4_OPACITY: Final[float] = 1.0
+    IMAGE_4_FLIP_X: Final[bool] = False
+    IMAGE_4_FLIP_Y: Final[bool] = False
 
     # ===== Тексты =====
     # TEXT_1: Заголовок
@@ -198,6 +240,12 @@ class TG_StaticPattern_3_Second_Defaults(TGDefaults):
     IMAGE_1_Y: Final[int] = 0
     IMAGE_1_Z: Final[int] = 1
     IMAGE_1_BORDER_RADIUS: Final[int] = 0
+    
+    # Transform
+    IMAGE_1_ROTATION: Final[float] = 0
+    IMAGE_1_OPACITY: Final[float] = 1.0
+    IMAGE_1_FLIP_X: Final[bool] = False
+    IMAGE_1_FLIP_Y: Final[bool] = False
 
     # IMAGE_2: Градиент
     IMAGE_2_WIDTH: Final[int] = 1080
@@ -206,6 +254,12 @@ class TG_StaticPattern_3_Second_Defaults(TGDefaults):
     IMAGE_2_Y: Final[int] = 900
     IMAGE_2_Z: Final[int] = 2
     IMAGE_2_BORDER_RADIUS: Final[int] = 0
+    
+    # Transform
+    IMAGE_2_ROTATION: Final[float] = 0
+    IMAGE_2_OPACITY: Final[float] = 1.0
+    IMAGE_2_FLIP_X: Final[bool] = False
+    IMAGE_2_FLIP_Y: Final[bool] = False
 
     # IMAGE_3: Линия
     IMAGE_3_WIDTH: Final[int] = 800
@@ -214,6 +268,12 @@ class TG_StaticPattern_3_Second_Defaults(TGDefaults):
     IMAGE_3_Y: Final[int] = 1300
     IMAGE_3_Z: Final[int] = 3
     IMAGE_3_BORDER_RADIUS: Final[int] = 0
+    
+    # Transform
+    IMAGE_3_ROTATION: Final[float] = 0
+    IMAGE_3_OPACITY: Final[float] = 1.0
+    IMAGE_3_FLIP_X: Final[bool] = False
+    IMAGE_3_FLIP_Y: Final[bool] = False
 
     # IMAGE_4: Стрелка
     IMAGE_4_WIDTH: Final[int] = 65
@@ -222,6 +282,12 @@ class TG_StaticPattern_3_Second_Defaults(TGDefaults):
     IMAGE_4_Y: Final[int] = 1240
     IMAGE_4_Z: Final[int] = 3
     IMAGE_4_BORDER_RADIUS: Final[int] = 0
+    
+    # Transform
+    IMAGE_4_ROTATION: Final[float] = 0
+    IMAGE_4_OPACITY: Final[float] = 1.0
+    IMAGE_4_FLIP_X: Final[bool] = False
+    IMAGE_4_FLIP_Y: Final[bool] = False
 
     # ===== Тексты =====
     # TEXT_1: Основной текст
@@ -266,6 +332,12 @@ class TG_StaticPattern_3_Third_Defaults(TGDefaults):
     IMAGE_1_Y: Final[int] = 0
     IMAGE_1_Z: Final[int] = 1
     IMAGE_1_BORDER_RADIUS: Final[int] = 0
+    
+    # Transform
+    IMAGE_1_ROTATION: Final[float] = 0
+    IMAGE_1_OPACITY: Final[float] = 1.0
+    IMAGE_1_FLIP_X: Final[bool] = False
+    IMAGE_1_FLIP_Y: Final[bool] = False
 
     # IMAGE_2: Градиент
     IMAGE_2_WIDTH: Final[int] = 1080
@@ -274,6 +346,12 @@ class TG_StaticPattern_3_Third_Defaults(TGDefaults):
     IMAGE_2_Y: Final[int] = 900
     IMAGE_2_Z: Final[int] = 2
     IMAGE_2_BORDER_RADIUS: Final[int] = 0
+    
+    # Transform
+    IMAGE_2_ROTATION: Final[float] = 0
+    IMAGE_2_OPACITY: Final[float] = 1.0
+    IMAGE_2_FLIP_X: Final[bool] = False
+    IMAGE_2_FLIP_Y: Final[bool] = False
 
     # IMAGE_3: Линия
     IMAGE_3_WIDTH: Final[int] = 800
@@ -282,6 +360,12 @@ class TG_StaticPattern_3_Third_Defaults(TGDefaults):
     IMAGE_3_Y: Final[int] = 1300
     IMAGE_3_Z: Final[int] = 3
     IMAGE_3_BORDER_RADIUS: Final[int] = 0
+    
+    # Transform
+    IMAGE_3_ROTATION: Final[float] = 0
+    IMAGE_3_OPACITY: Final[float] = 1.0
+    IMAGE_3_FLIP_X: Final[bool] = False
+    IMAGE_3_FLIP_Y: Final[bool] = False
 
     # ===== Тексты =====
     # TEXT_1: Основной текст
@@ -312,6 +396,12 @@ class TG_StaticPattern_4_First_Defaults(TGDefaults):
     IMAGE_1_Y: Final[int] = 0
     IMAGE_1_Z: Final[int] = 1
     IMAGE_1_BORDER_RADIUS: Final[int] = 0
+    
+    # Transform
+    IMAGE_1_ROTATION: Final[float] = 0
+    IMAGE_1_OPACITY: Final[float] = 1.0
+    IMAGE_1_FLIP_X: Final[bool] = False
+    IMAGE_1_FLIP_Y: Final[bool] = False
 
     # IMAGE_2: Линия
     IMAGE_2_WIDTH: Final[int] = 980
@@ -320,6 +410,12 @@ class TG_StaticPattern_4_First_Defaults(TGDefaults):
     IMAGE_2_Y: Final[int] = 1250
     IMAGE_2_Z: Final[int] = 3
     IMAGE_2_BORDER_RADIUS: Final[int] = 0
+    
+    # Transform
+    IMAGE_2_ROTATION: Final[float] = 0
+    IMAGE_2_OPACITY: Final[float] = 1.0
+    IMAGE_2_FLIP_X: Final[bool] = False
+    IMAGE_2_FLIP_Y: Final[bool] = False
 
     # IMAGE_3: Стрелка
     IMAGE_3_WIDTH: Final[int] = 65
@@ -328,6 +424,12 @@ class TG_StaticPattern_4_First_Defaults(TGDefaults):
     IMAGE_3_Y: Final[int] = 1267
     IMAGE_3_Z: Final[int] = 3
     IMAGE_3_BORDER_RADIUS: Final[int] = 0
+    
+    # Transform
+    IMAGE_3_ROTATION: Final[float] = 0
+    IMAGE_3_OPACITY: Final[float] = 1.0
+    IMAGE_3_FLIP_X: Final[bool] = False
+    IMAGE_3_FLIP_Y: Final[bool] = False
 
     # IMAGE_4: Бэкграунд
     IMAGE_4_WIDTH: Final[int] = 1080
@@ -336,6 +438,12 @@ class TG_StaticPattern_4_First_Defaults(TGDefaults):
     IMAGE_4_Y: Final[int] = 450
     IMAGE_4_Z: Final[int] = 2
     IMAGE_4_BORDER_RADIUS: Final[int] = 0
+    
+    # Transform
+    IMAGE_4_ROTATION: Final[float] = 0
+    IMAGE_4_OPACITY: Final[float] = 1.0
+    IMAGE_4_FLIP_X: Final[bool] = False
+    IMAGE_4_FLIP_Y: Final[bool] = False
 
     # ===== Тексты =====
     # TEXT_1: Заголовок
@@ -394,6 +502,12 @@ class TG_StaticPattern_4_Second_Defaults(TGDefaults):
     IMAGE_1_Y: Final[int] = 0
     IMAGE_1_Z: Final[int] = 1
     IMAGE_1_BORDER_RADIUS: Final[int] = 0
+    
+    # Transform
+    IMAGE_1_ROTATION: Final[float] = 0
+    IMAGE_1_OPACITY: Final[float] = 1.0
+    IMAGE_1_FLIP_X: Final[bool] = False
+    IMAGE_1_FLIP_Y: Final[bool] = False
 
     # IMAGE_2: Линия
     IMAGE_2_WIDTH: Final[int] = 980
@@ -402,6 +516,12 @@ class TG_StaticPattern_4_Second_Defaults(TGDefaults):
     IMAGE_2_Y: Final[int] = 1250
     IMAGE_2_Z: Final[int] = 3
     IMAGE_2_BORDER_RADIUS: Final[int] = 0
+    
+    # Transform
+    IMAGE_2_ROTATION: Final[float] = 0
+    IMAGE_2_OPACITY: Final[float] = 1.0
+    IMAGE_2_FLIP_X: Final[bool] = False
+    IMAGE_2_FLIP_Y: Final[bool] = False
 
     # IMAGE_3: Стрелка
     IMAGE_3_WIDTH: Final[int] = 65
@@ -410,6 +530,12 @@ class TG_StaticPattern_4_Second_Defaults(TGDefaults):
     IMAGE_3_Y: Final[int] = 1267
     IMAGE_3_Z: Final[int] = 3
     IMAGE_3_BORDER_RADIUS: Final[int] = 0
+    
+    # Transform
+    IMAGE_3_ROTATION: Final[float] = 0
+    IMAGE_3_OPACITY: Final[float] = 1.0
+    IMAGE_3_FLIP_X: Final[bool] = False
+    IMAGE_3_FLIP_Y: Final[bool] = False
 
     # IMAGE_4: Бэкграунд
     IMAGE_4_WIDTH: Final[int] = 1080
@@ -418,6 +544,12 @@ class TG_StaticPattern_4_Second_Defaults(TGDefaults):
     IMAGE_4_Y: Final[int] = 450
     IMAGE_4_Z: Final[int] = 2
     IMAGE_4_BORDER_RADIUS: Final[int] = 0
+    
+    # Transform
+    IMAGE_4_ROTATION: Final[float] = 0
+    IMAGE_4_OPACITY: Final[float] = 1.0
+    IMAGE_4_FLIP_X: Final[bool] = False
+    IMAGE_4_FLIP_Y: Final[bool] = False
 
     # ===== Тексты =====
     # TEXT_1: Основной текст
@@ -462,6 +594,12 @@ class TG_StaticPattern_4_Third_Defaults(TGDefaults):
     IMAGE_1_Y: Final[int] = 0
     IMAGE_1_Z: Final[int] = 1
     IMAGE_1_BORDER_RADIUS: Final[int] = 0
+    
+    # Transform
+    IMAGE_1_ROTATION: Final[float] = 0
+    IMAGE_1_OPACITY: Final[float] = 1.0
+    IMAGE_1_FLIP_X: Final[bool] = False
+    IMAGE_1_FLIP_Y: Final[bool] = False
 
     # IMAGE_2: Линия
     IMAGE_2_WIDTH: Final[int] = 980
@@ -470,6 +608,12 @@ class TG_StaticPattern_4_Third_Defaults(TGDefaults):
     IMAGE_2_Y: Final[int] = 1250
     IMAGE_2_Z: Final[int] = 3
     IMAGE_2_BORDER_RADIUS: Final[int] = 0
+    
+    # Transform
+    IMAGE_2_ROTATION: Final[float] = 0
+    IMAGE_2_OPACITY: Final[float] = 1.0
+    IMAGE_2_FLIP_X: Final[bool] = False
+    IMAGE_2_FLIP_Y: Final[bool] = False
 
     # IMAGE_3: Бэкграунд
     IMAGE_3_WIDTH: Final[int] = 1080
@@ -478,6 +622,12 @@ class TG_StaticPattern_4_Third_Defaults(TGDefaults):
     IMAGE_3_Y: Final[int] = 450
     IMAGE_3_Z: Final[int] = 2
     IMAGE_3_BORDER_RADIUS: Final[int] = 0
+    
+    # Transform
+    IMAGE_3_ROTATION: Final[float] = 0
+    IMAGE_3_OPACITY: Final[float] = 1.0
+    IMAGE_3_FLIP_X: Final[bool] = False
+    IMAGE_3_FLIP_Y: Final[bool] = False
 
     # ===== Тексты =====
     # TEXT_1: Основной текст

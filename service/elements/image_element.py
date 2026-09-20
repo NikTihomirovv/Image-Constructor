@@ -27,6 +27,10 @@ class ImageElement:
         self.x = None
         self.y = None
         self.border_radius = None
+        self.rotation = None
+        self.opacity = None
+        self.flip_x = None
+        self.flip_y = None
 
 
     @handle_errors
@@ -43,6 +47,10 @@ class ImageElement:
         self.x = self.image.x
         self.y = self.image.y
         self.border_radius = self.image.border_radius
+        self.rotation = self.image.rotation
+        self.opacity = self.image.opacity
+        self.flip_x = self.image.flip_x
+        self.flip_y = self.image.flip_y
 
         required_values = {
             'img': self.img,
@@ -51,6 +59,10 @@ class ImageElement:
             'x': self.x,
             'y': self.y,
             'border_radius': self.border_radius,
+            'rotation': self.rotation,
+            'opacity': self.opacity, 
+            'flip_x': self.flip_x, 
+            'flip_y': self.flip_y, 
         }
 
         missing = [name for name, value in required_values.items() if value is None]
@@ -73,17 +85,70 @@ class ImageElement:
                 self.logger.error('🔴 Не удалось открыть изображение')
                 return False
 
-            if self.border_radius > 0:
-                overlay = self._apply_border_radius(overlay, self.border_radius)
-
             if self.width and self.height:
                 overlay = overlay.resize((self.width, self.height))
                 self.logger.info(f'🟢 Изменён размер: {overlay.size}')
 
-            if overlay.mode == 'RGBA':
-                self.canvas.paste(overlay, (self.x, self.y), overlay)
+            if self.flip_x:
+                overlay = overlay.transpose(
+                    PILImage.Transpose.FLIP_LEFT_RIGHT
+                )
+                self.logger.info('🟢 Flip X применён')
+
+            if self.flip_y:
+                overlay = overlay.transpose(
+                    PILImage.Transpose.FLIP_TOP_BOTTOM
+                )
+                self.logger.info('🟢 Flip Y применён')
+
+            if self.rotation:
+                overlay = overlay.rotate(
+                    -self.rotation,
+                    expand=True,
+                    resample=PILImage.Resampling.BICUBIC
+                )
+                self.logger.info(
+                    f'🟢 Поворот: {self.rotation} градусов'
+                )
+
+            if self.opacity is not None and self.opacity < 1:
+                overlay = overlay.convert("RGBA")
+                alpha = overlay.getchannel("A")
+                alpha = alpha.point(
+                    lambda p: int(p * self.opacity)
+                )
+
+                overlay.putalpha(alpha)
+                self.logger.info(f'🟢 Прозрачность: {self.opacity}')
+
+            if self.border_radius > 0:
+                overlay = self._apply_border_radius(
+                    overlay,
+                    self.border_radius
+                )
+
+            if self.rotation:
+                center_x = self.x + self.width / 2
+                center_y = self.y + self.height / 2
+
+                paste_x = int(center_x - overlay.width / 2)
+                paste_y = int(center_y - overlay.height / 2)
+
             else:
-                self.canvas.paste(overlay, (self.x, self.y))
+                paste_x = self.x
+                paste_y = self.y
+
+            if overlay.mode == 'RGBA':
+                self.canvas.paste(
+                    overlay,
+                    (paste_x, paste_y),
+                    overlay
+                )
+            else:
+                self.canvas.paste(
+                    overlay,
+                    (paste_x, paste_y)
+                )
 
         except FileNotFoundError:
             self.logger.error(f'🔴 Файл не найден: {self.img}')
